@@ -1,0 +1,14 @@
+# Cloudflare Pages（静态站，无构建步骤）
+# 文档：https://developers.cloudflare.com/pages/
+#
+# 方式 A — 控制台连 Git：
+#   框架预设选「None」，构建命令留空，构建输出目录填「/」
+#   若仓库根目录不是本站，在「根目录」填 what-to-eat
+#
+# 方式 B — 本机命令行部署（需登录过：npx wrangler login）：
+#   cd 到本目录后执行：
+#   npx wrangler pages deploy . --project-name=what-to-eat
+
+name = "what-to-eat"
+compatibility_date = "2026-05-01"
+pages_build_output_dir = "."

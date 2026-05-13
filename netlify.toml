@@ -1,0 +1,5 @@
+# Netlify：把本仓库（或本文件夹）连到 Netlify 后，无需构建即可发布。
+# 拖拽部署：打开 https://app.netlify.com/drop ，把本文件夹打成 zip 拖进去即可。
+
+[build]
+  publish = "."

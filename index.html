@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="今天吃什么？随机推荐与收藏" />
+    <title>今天吃什么</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-pattern" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">选择困难症急救</p>
+        <h1>今天吃什么</h1>
+        <p class="lede">点一下，让宇宙帮你决定。可按口味筛选，喜欢的可以收进「想吃清单」。</p>
+      </header>
+
+      <section class="panel filters" aria-label="口味筛选">
+        <span class="filters-label">口味</span>
+        <div class="chips" id="tagChips"></div>
+      </section>
+
+      <section class="panel card" aria-live="polite">
+        <div class="card-inner" id="result">
+          <p class="hint">点击下方按钮，随机出一道菜</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn primary" id="btnPick">帮我选一个</button>
+          <button type="button" class="btn ghost" id="btnSave" disabled>加入想吃清单</button>
+        </div>
+      </section>
+
+      <section class="panel list-panel">
+        <div class="list-head">
+          <h2>想吃清单</h2>
+          <button type="button" class="btn text" id="btnClear" hidden>清空</button>
+        </div>
+        <ul class="fav-list" id="favList"></ul>
+        <p class="empty-fav" id="emptyFav">还没有收藏，选到喜欢的就点「加入想吃清单」。</p>
+      </section>
+
+      <footer class="foot">
+        <small>数据保存在本机浏览器，不上传服务器。</small>
+      </footer>
+    </main>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
